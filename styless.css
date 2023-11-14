@@ -4,13 +4,22 @@
     box-sizing: border-box;
 }
 
-header {
-    width: 100%;
+     /* ----------------BODY------------------- */
+
+body {
+    min-width: 100%;
+    padding: 10px;
+
+}
+/* ---------- COMIENZO DEL DISEÑO DE HEADER------------------------------------------ */
+/* header {
+    /* width: 100%; 
     display: flex;
     justify-content: space-around;
     padding: 20px;
     margin: 5px;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);}
+
 .container { 
     display: flex;
     align-items: center;
@@ -26,4 +35,25 @@ header {
 .items-link {
     margin: 15px;
     text-decoration: none;
-} 
+}   */
+
+   /* ---------- FIN DEL DISEÑO DE HEADER--------------------------------------- */
+
+ /* -------------COMIENZO DEL DISEÑO DE MAIN----------------------- */
+
+  .container-main {
+   background-color: rgb(204, 167, 236);
+            
+     }
+   
+ .titulo {
+     background-color: rgb(204, 167, 236);
+   }
+            
+ .nombre {
+     font-family: 'Passion One', sans-serif;
+    color: blue;
+     padding: 6px;
+    padding: 6px;
+      font-size: 50px;
+  }
