@@ -50,6 +50,7 @@ body {
     border-color: black;
     border-width: 5px;
     height: 650px;
+    flex-direction: column;
 }
    
 .saludo {
@@ -86,3 +87,15 @@ font-size: 0.813rem;
         bottom: auto;
         border-style: none;
 }
+
+/* --------------HASTA AQUI NO LE PUSE IMAGEN AL MAIN------------------------- */
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-uno {
+  height: 373px ;
+    }
+
+    /* --------------- FIN DEL MAIN--------------------------------- */
