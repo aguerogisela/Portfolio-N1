@@ -9,7 +9,7 @@
 body {
     min-width: 100%;
     padding: 10px;
-
+    font-family: 'Poppins', sans-serif;
 }
 /* ---------- COMIENZO DEL DISEÑO DE HEADER------------------------------------------ */
 /* header {
@@ -41,19 +41,48 @@ body {
 
  /* -------------COMIENZO DEL DISEÑO DE MAIN----------------------- */
 
-  .container-main {
-   background-color: rgb(204, 167, 236);
-            
-     }
+ .container-main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-style: groove;
+    /* background-color: rgb(204, 167, 236); */
+    border-color: black;
+    border-width: 5px;
+    height: 650px;
+}
    
+.saludo {
+    padding-top: 70px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
  .titulo {
-     background-color: rgb(204, 167, 236);
-   }
+     /* background-color: rgb(204, 167, 236); */
+     margin:15px;
+     }
             
  .nombre {
-     font-family: 'Passion One', sans-serif;
+    font-family: 'Amaranth', sans-serif;
     color: blue;
-     padding: 6px;
-    padding: 6px;
-      font-size: 50px;
+     /* padding-top:10px; */
+      font-size: 2.813rem;
+
   }
+
+.breve-descripcion {
+margin:15px; 
+color: rgb(54, 54, 54);
+font-size: 0.813rem;
+}
+
+
+.btn-primero {
+        border-radius: 100px;
+        margin: 15px;
+        padding: 7px 30px;
+        background-color: #5d5dea;
+        color: white;
+        bottom: auto;
+        border-style: none;
+}
