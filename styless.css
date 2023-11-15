@@ -7,10 +7,13 @@
      /* ----------------BODY------------------- */
 
 body {
-    min-width: 100%;
-    /* padding: 10px; */
+    /* max-width: 1100px; */
+        /* padding: 10px; */
     font-family: 'Poppins', sans-serif;
+    padding: auto;
 }
+
+   
 /* ---------- COMIENZO DEL DISEÑO DE HEADER------------------------------------------ */
 /* header {
     /* width: 100%; 
@@ -42,7 +45,8 @@ body {
  /* -------------COMIENZO DEL DISEÑO DE MAIN----------------------- */
 
  main {
-    padding: 30px;
+    padding: 120px 30px;
+    background-color: rgb(255, 255, 255);
  }
  .container-main {
     display: flex;
@@ -69,14 +73,14 @@ body {
     font-family: 'Amaranth', sans-serif;
     color: blue;
      /* padding-top:10px; */
-      font-size: 2.813rem;
+      font-size: 3.438rem;
 
   }
 
 .breve-descripcion {
 margin:15px; 
-color: rgb(54, 54, 54);
-font-size: 0.813rem;
+color: rgb(114, 111, 111);
+font-size: 0.938rem;
 }
 
 
@@ -104,20 +108,27 @@ font-size: 0.813rem;
 
     /* ------Comienzo de seccion "mis conocimientos"------------------------- */
 
- .mis-conocimientos {
-      /* border-style: groove; */
-      background-color: rgb(234, 225, 241);
-      height: 900px;
-      /* padding: 10px; */
- 
+ .container-conocimientos {
+    padding: 100px 30px;
+    background-color: rgb(235, 235, 235);
     }
+
+    /* ------DEBO RESOLVER EL TEMA DEL TAMAÑO DE MIS CONOCIMIENTOS----------------------- */
 
 .titulo-descripcion {
     display: flex;
-  justify-content: center;
-  text-align: center; 
-  flex-direction: column;
-  padding: 39px 23px;
+    justify-content: center;
+    text-align: center;
+    /* border-style: groove; */
+    /* background-color: rgb(204, 167, 236); */
+    /* border-color: black; */
+    /* border-width: 5px; */
+    height: auto;
+    flex-direction: column;
+}
+
+.parrafo-conocimientos {
+    margin: 24px 7px;
 }
 
 .segundo-titulo {
@@ -136,13 +147,12 @@ font-size: 0.813rem;
 
 .icono {
     display: flex;
-    width: 140px;
-    height: 140px;
+    width: 166px;
+    height: 166px;
     /* border-width: 2px; */
     /* border-color: black; */
     /* border-style: groove; */
-    margin: 15px;
-    margin-top: 15px;
+    margin: 5px;
     align-items: center;
     border-radius: 7px;
     flex-direction: column;
@@ -151,23 +161,34 @@ font-size: 0.813rem;
 }
 
 .iconos-de-conocimientos i {
-    font-size: 50px;
+    font-size: 70px;
+}
+.icono p {
+    padding-top: 10px;
 }
 
 /* <!----------------------- Fin de seccion de "Mis conocimientos" ----------------> */
+
+/* -----------------COMIENZO DE FRASE----------------- */
 .frase {
-    background-color: rgb(101, 101, 197);
-      height: 400px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      color: white;
-     
+    padding: 120px 30px;
+    background-color: rgb(247, 188, 247);
+    color: white;
+   
 }
 .container-frase {
-  
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    /* border-style: groove; */
+    /* background-color: rgb(204, 167, 236); */
+    /* border-color: black; */
+    /* border-width: 5px; */
+    /* height: 650px; */
+    flex-direction: column;
+    /* display: flex;
+    flex-direction: column;
+    text-align: center; */
 }
 
 .container-frase i {
@@ -177,3 +198,6 @@ font-size: 0.813rem;
 .autor-de-frase {
    font-size: 20px; 
 }
+
+/* ----------------FIN DE FRASE-------------------- */
+
