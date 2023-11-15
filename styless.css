@@ -41,14 +41,17 @@ body {
 
  /* -------------COMIENZO DEL DISEÑO DE MAIN----------------------- */
 
+ main {
+    padding: 30px;
+ }
  .container-main {
     display: flex;
     justify-content: center;
     text-align: center;
-    border-style: groove;
+    /* border-style: groove; */
     /* background-color: rgb(204, 167, 236); */
-    border-color: black;
-    border-width: 5px;
+    /* border-color: black; */
+    /* border-width: 5px; */
     height: 650px;
     flex-direction: column;
 }
@@ -58,10 +61,9 @@ body {
     font-weight: bold;
     font-size: 1.3rem;
 }
- .titulo {
+ /* .titulo {
      /* background-color: rgb(204, 167, 236); */
-     margin:15px;
-     }
+    
             
  .nombre {
     font-family: 'Amaranth', sans-serif;
@@ -95,7 +97,58 @@ font-size: 0.813rem;
     align-items: center;
 }
 .imagen-uno {
-  height: 373px ;
+  height: 350px ;
     }
 
     /* --------------- FIN DEL MAIN--------------------------------- */
+
+    /* ------Comienzo de seccion "mis conocimientos"------------------------- */
+
+ .mis-conocimientos {
+      /* border-style: groove; */
+      background-color: rgb(234, 225, 241);
+      height: auto;
+      padding: 30px;
+ 
+    }
+
+.titulo-descripcion {
+    display: flex;
+  justify-content: center;
+  text-align: center; 
+  flex-direction: column;
+  padding: 39px 23px;
+}
+
+.segundo-titulo {
+    font-size: 1.875rem;
+    /* padding-top: 40px; */
+}
+
+/* ---------------- AQUI COMIENZA LOS CUADROS DE MIS CONOCIMIENTOS------------------- */
+.iconos-de-conocimientos {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.icono {
+    display: flex;
+    width: 140px;
+    height: 140px;
+    /* border-width: 2px; */
+    /* border-color: black; */
+    /* border-style: groove; */
+    margin: 15px;
+    /* margin-top: 15px; */
+    align-items: center;
+    border-radius: 7px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fffaf8;
+}
+
+.iconos-de-conocimientos i {
+    font-size: 50px;
+}
