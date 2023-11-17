@@ -169,7 +169,8 @@
               </h5>
                <p class="parrafo-de-contacto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ipsum earum corrupti voluptatem quod laudantium enim quis sequi vel eaque aut dolore voluptate dicta facere, porro, tempora, praesentium eligendi possimus.
                </p>
-        <nav class="lista-de-contacto">
+        <div class="container-contacto">       
+        <nav class="ista-de-contacto">
              <a href="https://github.com/aguerogisela" class="red-github">
                  <span><i class="fa-brands fa-github-alt"></i></span>
                  <span>mygithub</span>
@@ -183,24 +184,65 @@
               <a href="https://www.linkedin.com/in/gisela-belen-ag%C3%BCero-barriga-8b0351209/" class="red-github">
                 <span><i class="fa-brands fa-linkedin"></i></span>
                 <span>BelenAguero</span>
+                <!-- --------------------PONER OTRA OPCION DE CONTACTO----------------- -->
              </a>
              <a href="mailto:aguerobel03@gmail.com?Subject=Hola%20Belen%20vi%20tu%20portfolio" class="email">
                  <span><i class="fa-regular fa-envelope"></i></span>
                  <span>aguerogisela03@gmail.com</span> </a>
-             
-              <!-- <label for="email"></label> 
-              </a>
-             <a href="#"> 
-             <span><i class="fa-brands fa-html5"></i></span></a> 
-          -->
-            
+        
         </nav>
-    </div>
+        </div>
+        <!-- ----------------------COMIENZO DEL FORM "ESCRIBEME"------------------------ -->
 
-    <!-- debo continuar aqui -->
-    
-           
-</section>
+        <form action="container_escribeme">
+            <h5>Escribeme</h5>
+              <div class="datos_personales">
+                <div class="input_container">
+                  <label for="input_nombre">Nombre*</label>
+                  <input
+                    type="text"
+                    placeholder="p.ej.:Gisela"
+                    name="nombre"
+                    class="form_input"
+                    id="input_nombre"
+                    required
+                  />
+                 
+                </div>
+                <div class="input_container">
+                  <label for="input_apellido">Apellido*</label>
+                  <input
+                    type="text"
+                    placeholder="p.ej.:Agüero"
+                    name="apellido"
+                    class="form_input"
+                    id="input_apellido"
+                    required
+                  />
+                </div>
+                <div class="input_container">
+                  <label for="input_email">E-mail*</label>
+                  <input
+                    type="email"
+                    placeholder="p.ej.:aguerogisela@gmail.com"
+                    name="email"
+                    class="form_input"
+                    id="input_email"
+                    required
+                  />
+                </div>
+                <div class="input_container">
+                    <label for="input_mensaje">Mensaje*</label>
+                 <textarea name="mensaje" id="input_mensaje" cols="30" rows="10" placeholder="Escibeme aqui"></textarea>   
+            
+                </div>
+                <input type="submit" name="enviar" value="ENVIAR" class="btn-enviar"> 
+              </div>
+     </form>
+    </div>
+    <!-- ---------------------------FIN DE SECCION "CONTACTAME"------------------------------------- -->
+ </section>
+   <!------------------------------- COMIENZO DE FOOTER ----------------------->
 
 <div>
 </body>
