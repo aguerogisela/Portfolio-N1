@@ -15,31 +15,25 @@
     <!-- ------------ Comienzo de Header--------------- -->
 <div class="container-padre">
     <header>
-        <!-- Comienzo de Header  -->
         <div class="container-header">
                    <nav>
                 <div class="nav-navegacion">
- <!--... No borre las listas porque aun estoy probando  -->
-                    <!-- <li class="item-nav"> -->
-                        <a href="#" class="items-link" >HOLA</a>
-                    <!-- </li>
-                    <li class="item-nav"> -->
-                        <a href="#" class="items-link">CONOCIMIENTOS</a>
-                    <!-- </li>
-                    <li class="item-nav"> -->
-                        <a href="#" class="items-link">PROYECTOS</a>
-                    <!-- </li>
-                    <li class="item-nav"> -->
-                        <a href="#" class="items-link">CONTACTO</a>
-                    <!-- </li>
-                </ul> -->
+
+                        <a href="#hola" class="items-link" >HOLA</a>
+               
+                        <a href="#conocimientos" class="items-link">CONOCIMIENTOS</a>
+                 
+                        <a href="#proyectos" class="items-link">PROYECTOS</a>
+                   
+                        <a href="#contacto" class="items-link">CONTACTO</a>
+               
                   </div>
             </nav>
         </div>
-        <!---------------- Final de Header ----------------------->
     </header>
     <!-- ---------------- Comienzo del Main----------------------- -->
-    <main>
+    <main>    
+<div id="hola">
          <div class="container-main">
                 <div class="titulo">
                  <p class="saludo">¡Hola! Soy</p>
@@ -51,13 +45,14 @@
                  <div class="imagen">
                      <img class="imagen-uno" src="Imagenes/inicio-foto-bienvenida.png" alt  >
                  </div>
-         </div>
+ </div>
        <!-- Final de Main -->
-
+    </div>
     </main>
     </main>
 <!-- -----------------Comienzo de seccion de "Mis conocimientos" ------------->
 <section class="mis-conocimientos">
+<div id="conocimientos">
   <div class="container-conocimientos">
    <!-- <section class="mis-conocimientos"> -->
         <div class="titulo-descripcion">
@@ -92,6 +87,7 @@
             </div>
         </div>
     </div>
+</div>
     </section> 
        <!----------------------- Fin de seccion de "Mis conocimientos" ---------------->
     <section class="frase">
@@ -112,6 +108,7 @@
   
       <!-------------------------------- Comienzo de seccion de "Mis proyectos" ----------------------------->
 <section class="container-proyectos">
+<div id="proyectos">
     <div class="texto-proyectos">
         <h4 class="titulo-proyecto">
             Mis proyectos
@@ -157,11 +154,12 @@
                 <p>Buscador de peliculas</p>
             </a></div>
     </div>
-    <!-- -----------FIN DE SECCION "MIS PROYECTOS"--------------------------- -->
+</div>    <!-- -----------FIN DE SECCION "MIS PROYECTOS"--------------------------- -->
 </section>
 <!-- ------------------COMIENZO DE SECCION "CONTACTAME"------------------------- -->
 </section>
 <section class="contactame">
+<div id="contacto">
    
     <div class="container-contactame">
               <h5 class="titulo-contactame">
@@ -240,10 +238,52 @@
               </div>
      </form>
     </div>
-    <!-- ---------------------------FIN DE SECCION "CONTACTAME"------------------------------------- -->
+</div>    <!-- ---------------------------FIN DE SECCION "CONTACTAME"------------------------------------- -->
  </section>
-   <!------------------------------- COMIENZO DE FOOTER ----------------------->
+ <footer>
+    <!-- ----------------------------NAVEGACION FINAL ----------------------------- -->
+    <div class="navegacion-de-footer">
+        <nav>
+            
+           <span> <a href="#hola" class="items-link" >HOLA</a></span>
+               
+            <span><a href="#conocimientos" class="items-link">CONOCIMIENTOS</a></span>
+     
+            <span><a href="#proyectos" class="items-link">PROYECTOS</a></span>
+       
+            <span><a href="#contacto" class="items-link">CONTACTO</a></span>
+        </nav>
+    </div>
+    <!-- ---------------------FINAL DE NAVEGACION--------------------- -->
+    <div class="iconos-contacto">       
+        <nav class="ultimos-iconos">             
+             <a href="https://github.com/aguerogisela" class="red-githubdos">
+                 <span><i class="fa-brands fa-github-alt"></i></span>
+            </a>
+                
+            
+            <a href="https://www.linkedin.com/in/gisela-belen-ag%C3%BCero-barriga-8b0351209/" class="red-githubdos">
+                 <span><i class="fa-brands fa-linkedin"></i></span>
+                
+              </a>
+              <a href="https://www.linkedin.com/in/gisela-belen-ag%C3%BCero-barriga-8b0351209/" class="red-githubdos">
+                <span><i class="fa-brands fa-linkedin"></i></span>
+                
+                <!-- --------------------PONER OTRA OPCION DE CONTACTO----------------- -->
+             </a>
+             <a href="mailto:aguerobel03@gmail.com?Subject=Hola%20Belen%20vi%20tu%20portfolio" class="red-githubdos">
+                 <span><i class="fa-regular fa-envelope"></i></span>
+                  </a>
+         </nav>
+   <!------ ------------------------- COMIENZO DE FOOTER ----------------------->
 
+    <!-- Aqui van de nuevo los links del header -->
+   
+    <p class="saludo-final">
+        Hecho con amor por Belen
+    </p>
+</footer>
+    <!-- Final del footer -->
 <div>
 </body>
 </html>
