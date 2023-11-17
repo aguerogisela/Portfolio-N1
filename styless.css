@@ -254,3 +254,109 @@ h4 {
     color: gray;
 
 }
+
+/* --------------COMIENZO DE "CONTACTAME"------------ */
+.contactame{
+padding: 32px 30px;
+background-color: rgb(141, 141, 141)
+}
+
+h5 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.parrafo-de-contacto {
+margin-bottom: 15px;
+}
+
+/* ------------ LISTA DE CONTACTOS----------- */
+/* 
+.red-github {
+    margin-bottom: 100px;
+    padding-left: 30px;
+    margin-top: 20px;
+    height: 27px;
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    }
+    
+    .red-github span:first-child {
+        display:inline-block;
+        width: 2.2rem;
+        height: 2.2rem;
+        background-color: #f10202;
+        color: #8338ec;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        margin-right: 10px;
+        text-align: center;
+        transition: 0.2s;
+    }
+        
+    .red-github span:first-child:hover {
+     
+     font-size: 20px;
+     background-color: #010101;
+    } */
+
+.lista-de-contacto {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    
+.red-github {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-bottom: 15px;
+        color: black;
+    }
+
+.red-github span:first-child {
+    font-size: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+
+.red-github span:last-child {
+    padding-left: 15px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-bottom: 15px;
+    color: black;
+
+}
+.email span:first-child {
+    font-size: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+.email span:last-child  {
+    padding-left: 15px;
+
+}
+/* ----------------falta aqui poner la opcion hover------------ */
+/* ---------FIN DEL NAV DE LISTA DE CONTACTO------------- */
+
