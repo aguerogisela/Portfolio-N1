@@ -30,14 +30,17 @@ body {
 
    
 /* ---------- COMIENZO DEL DISEÑO DE HEADER------------------------------------------ */
- header {
+@media screen and (min-width:576px){
+
+header {
     width: 100%; 
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    padding: 20px;
-    margin: 5px;
-    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);}
-
+    background: var(--color-seleccionado);
+    background: var(--color-segundo);
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+   }
 .container { 
     display: flex;
     align-items: center;
@@ -48,12 +51,25 @@ body {
 .nav-navegacion {
     display: flex;
     justify-content: space-around;
+    padding-left: 552px;
 }
 
 .items-link {
-    margin: 15px;
+    display: flex;
+    text-align: center;
+    /* margin: 15px; */
     text-decoration: none;
-}  
+    color: white;
+} 
+
+.items-link:last-child {
+    border: 2px #4fc5cf;
+    background-color: gray;
+    width: auto; 
+    padding: 10px 14px;
+    
+}
+ }
 @media (max-width: 970px) {
     header {
         display: none; 
@@ -64,10 +80,10 @@ body {
  /* -------------COMIENZO DEL DISEÑO DE MAIN---------------ter-------- */
 
  main {
-    padding: 145px 30px;
+    padding: 61px 30px;
     background-color: rgb(255, 255, 255);
  }
- .container-main {
+ #container-main {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -77,8 +93,30 @@ body {
     /* border-width: 5px; */
     flex-direction: column;
 }
-   
+/* @media screen and (min-width:970px){ */
+    /* .container-main  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    } */
+/* } */
+/* @media screen and (min-width:970px) {
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+}   
+} */
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
 .saludo {
+    padding-top: 50px;
     font-weight: bold;
     font-size: 1.3rem;
     font-family: var(--tipografia-titulo);
@@ -86,20 +124,38 @@ body {
  /* .titulo {
      /* background-color: rgb(204, 167, 236); */
     
-            
+/* @media screen and (min-width:970px) {
+    .saludo {
+        font-size: 30px;
+    }
+}
+         */
  .nombre {
     font-family:var();
     color:var(--color-seleccionado);
      /* padding-top:10px; */
-      font-size: 50px;
-
+      font-size: 40px;
   }
+  /* @media screen and (min-width:970px) {
+    .nombre {
+        font-size: 65px;
+        padding-bottom: 15px;
+    }
+  } */
 
 .breve-descripcion {
 margin:15px; 
 color: rgb(114, 111, 111);
 font-size: 0.938rem;
 }
+
+/* @media screen and (min-width:970px) {
+    .breve-descripcion {
+        margin: 0px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+} */
 
 
 .btn-primero {
@@ -114,6 +170,15 @@ font-size: 0.938rem;
     font-size: 15px;
 }
 
+/* @media screen and (min-width:970px) {
+    .btn-primero {
+        margin: 0px;
+        margin-top: 40px;
+        width: 60%;    
+        font-size: 16px;
+}
+} */
+
 /* --------------HASTA AQUI NO LE PUSE IMAGEN AL MAIN------------------------- */
 .imagen {
     display: flex;
@@ -121,20 +186,27 @@ font-size: 0.938rem;
     align-items: center;
 }
 .imagen-uno {
-  height: 350px ;
+ width: 100%;
+ 
     }
+
+
 
     /* --------------- FIN DEL MAIN--------------------------------- */
 
     /* ------Comienzo de seccion "mis conocimientos"------------------------- */
-
- .container-conocimientos {
+ 
+ #container-conocimientos {
     padding: 100px 30px;
     background-color:rgb(246,247,251);
     }
+/* @media screen and (min-width:970px) {
+    .container-conocimientos { padding: 110px 40px 141px;
+
+    }
+} */
 
     /* ------DEBO RESOLVER EL TEMA DEL TAMAÑO DE MIS CONOCIMIENTOS----------------------- */
-
 .titulo-descripcion {
     display: flex;
     justify-content: center;
@@ -194,6 +266,14 @@ font-size: 0.938rem;
     padding-top: 10px;
 }
 
+/* @media screen and (min-width:970px) {
+    .icono {
+        width: 100px;
+        height: 100px;
+    }
+} */
+
+
 /* <!----------------------- Fin de seccion de "Mis conocimientos" ----------------> */
 
 /* -----------------COMIENZO DE FRASE----------------- */
@@ -227,26 +307,32 @@ font-size: 0.938rem;
 .container-frase i {
     font-size: 100px;
 }
-
+.comillas {
+    padding-bottom: 10px;
+}
 .autor-de-frase {
-   font-size: 20px; 
+   font-size: 20px;
+   padding-top: 10px; 
 }
 
 /* ----------------FIN DE FRASE-------------------- */
 /* --------------------COMIENZO DE MIS PROYECTOS------------------ */
-.container-proyectos {
-    padding: 120px 30px;
-    background-color: EBF2F5;
+#container-proyectos {
+    padding: 100px 30px;
+    background-color:rgb(246,247,251)
 }
 
 .texto-proyectos {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-bottom: 40px;
-}
+    flex-direction: column;
+    height: auto;
 
+}
+.descripcion-proyectos{
+    margin: 24px 7px;
+}
 h4 {
     font-size:var(--subtitulos--tamaño);
     padding-bottom: 10px;
@@ -254,27 +340,30 @@ h4 {
 }
 
 .card-proyecto img {
-    height: 200px;
-    width: 233px;
+    width: 100%;
 }
 
 .cards-de-proyectos {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 27px;
 }
 .card-proyecto {
-    width: 292px;
-    height: 282px;
-  margin: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        padding: 30px 10px;
+        width: calc(50% - 1em);
+        /* display: flex; */
+        margin: 5px;
+        align-items: center;
+        border-radius: 7px;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid #e4e3e3;
+        flex-wrap: wrap;
 }
 
 .card-proyecto:hover {
@@ -290,7 +379,7 @@ h4 {
 /* ------------------FINAL DE "MIS PROYECTOS"--------------------------------------- */
 
 /* -----------------------------------COMIENZO DE "CONTACTAME"------------------------------------------- */
-.contactame {
+#container-contactame {
     background-color:rgb(214,229,232);
     padding: 18px;
     padding-top: 50px;
@@ -301,9 +390,7 @@ h5 {
     font-size:var(--subtitulos--tamaño);
     padding-bottom: 13px;
 }
-.container-contactame {
-    padding-bottom: 55px;
-}
+
 .container-contacto {
     margin-top: 35px;
     padding-left: 22px;
@@ -384,7 +471,8 @@ padding-left: 15px;
     color: rgb(255, 255, 255);
 }
 
-.github-text:hover {
+.github-text:hover,
+.red-github:hover .github-text {
     color: rgb(128, 0, 96);
 }
 
@@ -398,9 +486,10 @@ padding-left: 15px;
 /* ----------------falta aqui poner la opcion hover------------ */
 /* ---------FIN DEL NAV DE LISTA DE CONTACTO------------- */
 /* -------------------------COMIENZO DE FORMULARIO----------------------------------- */
-.container-formulario {
-    padding-bottom: 60px;
-}
+form {
+    padding: 18px;
+    padding-top: 50px;
+padding-bottom: 60px;}
 
 h6 {
 font-size:var(--subtitulos--tamaño);
@@ -412,7 +501,7 @@ font-family: var(--tipografia-titulo);
 .input_container {
 display: flex;
 flex-direction: column;
-padding-bottom: 8px;
+padding-bottom: 30px;
 }
 .input_container label {
 margin: 8px;
@@ -421,20 +510,17 @@ margin: 8px;
 border-radius: 30px;
 height: 37px;
 border: none;
+background: rgb(226, 226, 226);
 }
 .input_container ::placeholder {
 font-size: 15px;
 padding-left: 18px;
 }
 .input_container textarea {
-padding:10px;
+padding:18px 20px;
 border-radius: 34px;
-border: none;}
-
-.input_container textarea ::placeholder {
-font-size: 15px;
-padding-left: 18px; 
-}
+border: none;
+background:rgb(226, 226, 226); ;}
 
 
 .btn-enviar{
@@ -482,11 +568,11 @@ align-items: center;}
 .navegacion-de-footer {
     padding-bottom: 20px;
 }
-@media (max-width: 970px) {
+ @media (max-width: 970px) {
     .navegacion-de-footer {
         display: none; 
     }
-}
+} 
 /* -------------FINAL DE NAVEGACION DE FOOTER PARA DOSKTOP--------------------------- */
 
 /* -----------ICONOS Y SALUDO FINAL ------------------------------------ */
