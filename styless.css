@@ -15,22 +15,30 @@
 :root {
     --subtitulos--tamaño: 35px;
 }
+:root {
+    --subtitulo-tamaño-ipad:50px
+}
 :root{
     --color-icono: rgb(12, 189, 196);
 }
 
+:root {
+    --tamaño-descripcion-ipad: 22px
+}
+:root {
+    --separacion: 20px; 
+}
      /* ----------------BODY------------------- */
 
 body {
-    /* max-width: 1100px; */
-        /* padding: 10px; */
+   
         font-family: 'Oxygen', sans-serif;
         padding: auto;
 }
 
    
 /* ---------- COMIENZO DEL DISEÑO DE HEADER------------------------------------------ */
-@media screen and (min-width:576px){
+@media screen and (min-width:970px){
 
 header {
     width: 100%; 
@@ -87,75 +95,58 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    /* border-style: groove; */
-    /* background-color: rgb(204, 167, 236); */
-    /* border-color: black; */
-    /* border-width: 5px; */
+   
     flex-direction: column;
 }
-/* @media screen and (min-width:970px){ */
-    /* .container-main  {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    } */
-/* } */
-/* @media screen and (min-width:970px) {
-    .titulo {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
 
-}   
-} */
 .titulo {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
 }
+        @media screen and (min-width: 750px) {
+            .titulo {
+                padding-top: 30px;            }
+            
+        }
+
 .saludo {
     padding-top: 50px;
     font-weight: bold;
     font-size: 1.3rem;
     font-family: var(--tipografia-titulo);
 }
- /* .titulo {
-     /* background-color: rgb(204, 167, 236); */
-    
-/* @media screen and (min-width:970px) {
-    .saludo {
+        @media screen and (min-width: 750px){
+        .saludo {
         font-size: 30px;
-    }
-}
-         */
- .nombre {
+         }
+        }
+
+.nombre {
     font-family:var();
     color:var(--color-seleccionado);
-     /* padding-top:10px; */
       font-size: 40px;
-  }
-  /* @media screen and (min-width:970px) {
-    .nombre {
-        font-size: 65px;
+}
+         @media screen and (min-width:750px) {
+        .nombre {
+        font-size: 70px;
         padding-bottom: 15px;
-    }
-  } */
-
+         }
+          } 
+ 
 .breve-descripcion {
 margin:15px; 
 color: rgb(114, 111, 111);
 font-size: 0.938rem;
 }
 
-/* @media screen and (min-width:970px) {
-    .breve-descripcion {
-        margin: 0px;
-        padding-top: 10px;
-        font-size: 20px;
-    }
-} */
+@media screen and (min-width:750px) {
+         .breve-descripcion {
+         padding-bottom: 30px;
+         font-size: 25px;
+        }
+} 
 
 
 .btn-primero {
@@ -165,19 +156,15 @@ font-size: 0.938rem;
     background: var(--color-seleccionado);
     background: var(--color-segundo);
     color: white;
-    bottom: auto;
     border-style: none;
     font-size: 15px;
 }
-
-/* @media screen and (min-width:970px) {
-    .btn-primero {
-        margin: 0px;
-        margin-top: 40px;
-        width: 60%;    
-        font-size: 16px;
-}
-} */
+    @media screen and (min-width:750px) {
+         .btn-primero {
+        padding: 22px 49px;
+        font-size: 20px;
+        margin: 0px;}                
+    } 
 
 /* --------------HASTA AQUI NO LE PUSE IMAGEN AL MAIN------------------------- */
 .imagen {
@@ -200,21 +187,13 @@ font-size: 0.938rem;
     padding: 100px 30px;
     background-color:rgb(246,247,251);
     }
-/* @media screen and (min-width:970px) {
-    .container-conocimientos { padding: 110px 40px 141px;
 
-    }
-} */
 
     /* ------DEBO RESOLVER EL TEMA DEL TAMAÑO DE MIS CONOCIMIENTOS----------------------- */
 .titulo-descripcion {
     display: flex;
     justify-content: center;
     text-align: center;
-    /* border-style: groove; */
-    /* background-color: rgb(204, 167, 236); */
-    /* border-color: black; */
-    /* border-width: 5px; */
     height: auto;
     flex-direction: column;
 }
@@ -222,10 +201,24 @@ font-size: 0.938rem;
 .parrafo-conocimientos {
     margin: 24px 7px;
 }
+    @media screen and (min-width: 750px){
+        .parrafo-conocimientos {
+            font-size: var(--tamaño-descripcion-ipad);
+            padding-inline: 82px;
+        }
+        
+    }
 
 .segundo-titulo{
     font-size: var(--subtitulos--tamaño);
-    font-family: var(--tipografia-titulo);}
+    font-family: var(--tipografia-titulo);
+}
+    @media screen and (min-width: 750px) {
+        .segundo-titulo {
+            font-size: var(--subtitulo-tamaño-ipad);
+        }
+    }
+    
 
 /* ---------------- AQUI COMIENZA LOS CUADROS DE MIS CONOCIMIENTOS------------------- */
 .iconos-de-conocimientos {
@@ -241,7 +234,7 @@ font-size: 0.938rem;
         display: flex;
         /* width: auto; */
         padding: 30px 10px;
-        width: calc(50% - 1em);
+        width: calc(70px * 2);
         /* height: auto; */
         /* border-width: 2px; */
         /* border-color: black; */
@@ -255,6 +248,14 @@ font-size: 0.938rem;
         border: 1px solid #e4e3e3;
         flex-wrap: wrap;
 }
+    @media screen and (min-width: 750px){
+        .icono {
+            width: 233px;
+            height: 233px;
+            margin: 8px;
+        }
+        
+    }
 .icono:hover{
     border: 1px solid rgba(36,127,130,1);
 }
@@ -262,51 +263,54 @@ font-size: 0.938rem;
 .iconos-de-conocimientos i {
     font-size: 50px;
 }
+    @media screen and (min-width: 750px){
+        .iconos-de-conocimientos i {
+            font-size: 80px;
+        }
+        
+    }
 .icono p {
     padding-top: 10px;
 }
-
-/* @media screen and (min-width:970px) {
-    .icono {
-        width: 100px;
-        height: 100px;
+    @media screen and (min-width: 750px){
+        .icono p {
+            font-size: 20px;
+        }
+        
     }
-} */
 
 
 /* <!----------------------- Fin de seccion de "Mis conocimientos" ----------------> */
 
 /* -----------------COMIENZO DE FRASE----------------- */
-/* .frase {
-    padding: 120px 30px;
-    background-color: rgb(247, 188, 247);
-    color: white;
-   
-} */
+
 .container-frase {
     display: flex;
     justify-content: center;
     text-align: center;
-    /* border-style: groove; */
-    /* background-color: rgb(204, 167, 236); */
-    /* border-color: black; */
-    /* border-width: 5px; */
-    /* height: 650px; */
     flex-direction: column;
-    /* display: flex;
-    flex-direction: column;
-    text-align: center; */
     padding: 100px 30px;
     background:var(--color-seleccionado);
     background: var(--color-segundo);
     color: white;
+}
+    @media screen and (min-width: 750px){
+        .container-frase {
+            padding: 120px 80px;
+            font-size: 20px;
+        }
+        
     }
-
-
 
 .container-frase i {
     font-size: 100px;
 }
+    @media screen and (min-width: 750px){
+        .container-frase i {
+            font-size: 110px ;
+        }
+
+    }
 .comillas {
     padding-bottom: 10px;
 }
@@ -314,7 +318,12 @@ font-size: 0.938rem;
    font-size: 20px;
    padding-top: 10px; 
 }
-
+    @media screen and (min-width: 750px){
+        .autor-de-frase {
+            font-size: 30px;
+            padding-top: 35px;
+        }
+    }
 /* ----------------FIN DE FRASE-------------------- */
 /* --------------------COMIENZO DE MIS PROYECTOS------------------ */
 #container-proyectos {
@@ -333,11 +342,24 @@ font-size: 0.938rem;
 .descripcion-proyectos{
     margin: 24px 7px;
 }
+    @media screen and (min-width: 750px){
+        .descripcion-proyectos {
+            font-size: var(--tamaño-descripcion-ipad);
+            padding-inline: 82px;
+        }
+        
+    }
 h4 {
     font-size:var(--subtitulos--tamaño);
     padding-bottom: 10px;
     font-family:var(--tipografia-titulo);
 }
+
+    @media screen and (min-width: 750px) {
+    h4 {
+        font-size: var(--subtitulo-tamaño-ipad);
+        }
+    }
 
 .card-proyecto img {
     width: 100%;
@@ -354,7 +376,7 @@ h4 {
 .card-proyecto {
         display: flex;
         padding: 30px 10px;
-        width: calc(50% - 1em);
+        width: calc(70px * 2);
         /* display: flex; */
         margin: 5px;
         align-items: center;
@@ -364,8 +386,22 @@ h4 {
         background-color: white;
         border: 1px solid #e4e3e3;
         flex-wrap: wrap;
+        
 }
+    @media screen and (min-width: 750px){
+        .card-proyecto {
+            width: 272px;
+         height: 305px;
+         margin: 8px;
 
+        }
+        
+    }
+.adentro-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .card-proyecto:hover {
     box-shadow: 0 0 8px 4px (13,78,90);
     -webkit-box-shadow: 0 0 6px 3px rgb(124, 198, 201)}
@@ -379,34 +415,62 @@ h4 {
 /* ------------------FINAL DE "MIS PROYECTOS"--------------------------------------- */
 
 /* -----------------------------------COMIENZO DE "CONTACTAME"------------------------------------------- */
+/* ----------------- ACOMODAR ESTA SECCION DE CONTACTAME--------- */ */
+
 #container-contactame {
-    background-color:rgb(214,229,232);
+    
     padding: 18px;
     padding-top: 50px;
 }
-
+    @media screen and (min-width: 750px){
+        #container-contactame {
+            font-size: 22px; 
+            padding:  30px;
+        }
+        }
 h5 {
     font-family: var(--tipografia-titulo);
     font-size:var(--subtitulos--tamaño);
     padding-bottom: 13px;
 }
+    @media screen and (min-width:750px){
+        h5 {
+            font-size: var(--subtitulo-tamaño-ipad);
+        }
+        
+    }
 
 .container-contacto {
     margin-top: 35px;
     padding-left: 22px;
     margin-bottom: 30px;
 }
+    @media screen and (min-width: 750px){
+        .container-contacto {
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 50px;
+        }
+        
+    }
 .parrafo-de-contacto{
     padding-top: 13px;
     padding-bottom: 15px;
     color: rgb(65, 65, 65);
 }
-.lista-de-contacto {
+    @media screen and (min-width: 750px){
+        .parrafo-de-contacto {
+            padding-right: 160px;
+            padding-bottom: 40px;
+        }
+        
+    }
+/* .lista-de-contacto {
 display: flex;
 align-items: flex-start;
 flex-direction: column;
 padding-top: 30px;
-}
+} */
 
 .red-github {
     display: flex;
@@ -415,6 +479,13 @@ padding-top: 30px;
     padding-bottom: 30px;
     color: rgb(0, 0, 0);
 }
+    @media screen and (min-width: 750px){
+        .red-github {
+            padding-bottom: none;
+            padding: 30px;
+        }
+        
+    }
 .red-github span:first-child {
 font-size: 25px;
 border-radius: 50%;
@@ -442,6 +513,13 @@ text-decoration: none;
 padding-bottom: 15px;
 color: black;
 }
+    @media screen and (min-width: 750px){
+        .email {
+            padding-bottom: 0px;
+        }
+        
+    }
+
 .email span:first-child {
 font-size: 20px;
 border-radius: 50%;
@@ -452,6 +530,13 @@ width: 30px;
 height: 30px;
 color:var(--color-icono);
 }
+    @media screen and (min-width: 750px){
+        .email span:first-child {
+            padding-top: 13px;
+        }
+        
+    }
+
 /* ------------ACCION HOVER EN LOS ICONOS ----------------------------- */
 .email span:first-child:hover{
      font-size: 20px;
@@ -459,10 +544,17 @@ color:var(--color-icono);
         color: rgb(255, 255, 255);
        
 }
+  
 
 .email span:last-child  {
 padding-left: 15px;
 }
+    @media screen and(min-width: 750px){
+        .email span:last-child {
+            padding-top: 15px;
+        }
+        
+    }
 
 .email:hover span:first-child {
     font-size: 20px;
@@ -470,6 +562,7 @@ padding-left: 15px;
     cursor: pointer;
     color: rgb(255, 255, 255);
 }
+    
 
 .github-text:hover,
 .red-github:hover .github-text {
@@ -482,14 +575,15 @@ padding-left: 15px;
     cursor: pointer;
     color: rgb(255, 255, 255);
 }
-
-/* ----------------falta aqui poner la opcion hover------------ */
+/* ----------------- ACOMODAR ESTA SECCION DE CONTACTAME--------- */
 /* ---------FIN DEL NAV DE LISTA DE CONTACTO------------- */
 /* -------------------------COMIENZO DE FORMULARIO----------------------------------- */
 form {
     padding: 18px;
     padding-top: 50px;
-padding-bottom: 60px;}
+padding-bottom: 60px;
+}
+   
 
 h6 {
 font-size:var(--subtitulos--tamaño);
@@ -497,6 +591,26 @@ font-weight: bold;
 padding-bottom: 15px;
 font-family: var(--tipografia-titulo);
 }
+
+
+@media screen and (min-width: 750px) {
+    .prueba {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--separacion); /* -Espacio mínimo entre los dos inputs -*/
+        width: 100%;
+    }
+
+    .prueba .input_container {
+        flex-grow: 1; 
+        max-width: calc(50% - var(--separacion)); 
+    }
+}
+
+ .input_container:first-child .input_prueba {
+    display:flex;
+
+ }
 
 .input_container {
 display: flex;
@@ -516,12 +630,30 @@ background: rgb(226, 226, 226);
 font-size: 15px;
 padding-left: 18px;
 }
+    @media screen and (min-width: 750px){
+        .input_container ::placeholder {
+            font-size: 18px;
+            padding-left: 24px;
+            }
+        
+    }
 .input_container textarea {
 padding:18px 20px;
 border-radius: 34px;
 border: none;
 background:rgb(226, 226, 226); ;}
 
+textarea#input_mensaje::placeholder {
+text-decoration: none;
+font-family: 'Oxygen', sans-serif;
+font-size: 15px;
+} 
+    @media screen and (min-width: 750px){
+        textarea#input_mensaje::placeholder {
+            font-size: 18px;
+            } 
+        
+    }
 
 .btn-enviar{
 font-size: 12px; 
@@ -539,6 +671,12 @@ align-items: center;}
     cursor: pointer;
 
  }
+    @media screen and (min-width: 750px){
+        .btn-enviar {
+            font-size: 18px;
+        }
+        
+    }
  fieldset {
     border: none;
   }
@@ -560,27 +698,36 @@ align-items: center;}
     flex-direction: column;
 }
 /* ------------------------- NAVEGACION DE FOOTER PARA DOKSTOP-------------------- */
-.navegacion-de-footer a{
+.navegacion-de-footer span a{
     text-decoration: none;
     margin: 10px;
+    display: none;
 }
 
-.navegacion-de-footer {
-    padding-bottom: 20px;
-}
- @media (max-width: 970px) {
-    .navegacion-de-footer {
-        display: none; 
+ @media (min-width: 750px) {
+    .navegacion-de-footer  span a{
+         display: inline;
+         text-decoration: none;
+         color: white;
+         padding-bottom: 15px;
+         font-size: 22px;
+         padding-left: 10px;
+       
     }
 } 
+
+@media (min-width: 750px){
+    .navegacion-de-footer {
+        padding: 40px;
+    }
+}
+
 /* -------------FINAL DE NAVEGACION DE FOOTER PARA DOSKTOP--------------------------- */
 
 /* -----------ICONOS Y SALUDO FINAL ------------------------------------ */
 
     .ultimos-iconos {
         display: flex;
-        /* padding-bottom: 30px; */
-        /* flex-direction: row; */
         justify-content: center;
         }
         
@@ -591,7 +738,7 @@ align-items: center;}
             padding-bottom: 15px;
             color: black;
         }
-    
+        
     .red-githubdos span {
         font-size: 20px;
         /* background-color: rgb(112, 54, 54); */
@@ -605,21 +752,31 @@ align-items: center;}
         color:var(--color-seleccionado);
         margin: 10px;
     }
+
+    @media screen and (min-width: 750px){
+            .red-githubdos span{ 
+                font-size: 30px;
+                width: 60px;
+                height: 60px;
+            }  
+            
+    }
     .red-githubdos span:hover{
         border: 1px solid white;
         color: white;
         background: var(--color-seleccionado);
         background: var(--color-segundo);
-
-       
     }
 
 
-    
 
-
-.saludo-final {
-    font-size: 15px;
+.saludo-final p {
+    font-size: 20px;
     color: white;
 }
-
+    @media screen and(min-width: 750px){
+        .saludo-final  {
+             font-size: 60px;
+            padding: 50px;}
+    }
+    /* ------------ ACOMODAR EL TAMAÑO DE ACA---------------------- */
