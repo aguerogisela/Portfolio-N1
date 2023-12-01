@@ -4,28 +4,30 @@
     box-sizing: border-box;
 }
 
-
+/* ------------variables-------------- */
 :root{
 --tipografia-titulo: 'Montserrat', sans-serif;}
 :root {
---color-seleccionado: rgb(13,78,90);
+--color-seleccionado:  rgb(255,180,224);
+;
+;
 }
 :root{
-    --color-segundo:linear-gradient(0deg, rgba(13,78,90,1) 6%, rgba(13,78,90,1) 21%, rgba(36,127,130,1) 100%);
+    --color-segundo: linear-gradient(0deg, rgba(255,180,224,0.5466561624649859) 0%, rgba(253,45,133,0.5634628851540616) 100%);
+
 }
 :root {
-    --subtitulos--tamaño: 35px;
+    --subtitulos--tamaño: 2.188rem;
 }
 :root {
     --subtitulo-tamaño-ipad:50px
 }
 :root{
-    --color-icono: rgb(12, 189, 196);
+    --color-icono: rgb(196, 12, 181);
 }
 
-
 :root {
-    --tamaño-descripcion-ipad: 22px
+    --tamaño-descripcion-ipad: 1.375rem;
 }
 :root {
     --separacion: 20px;
@@ -34,17 +36,16 @@
 
 
 body {
-   
-        font-family: 'Oxygen', sans-serif;
+    font-family: 'Open Sans', sans-serif;
         padding: auto;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;}
 
 /* -----COMIENZO DE HEADER---- */
 
 
-a:link, a:visited, a:active {
-    text-decoration:none;}
 
 @media screen and (max-width:970px){
     header {
@@ -62,8 +63,8 @@ a:link, a:visited, a:active {
         padding: 30px 0px;
         width: 100%;
         position: absolute;
-        background: rgb(34,193,195);
-        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(79,45,253,0.36738445378151263) 100%);
+        background: rgb(255,165,217);
+        background: linear-gradient(0deg, rgba(255,165,217,0.9752275910364145) 0%, rgba(248,178,255,0.8631827731092436) 100%);
 
         box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
         position: fixed;
@@ -86,31 +87,33 @@ a:link, a:visited, a:active {
 
     .nav-bar li a {
         font-weight: 500;
-        font-size: 16ps;
-        color: #edf0f1;
+        font-size: 1rem;
+        color: #535353;
         text-decoration: none;
         transition: color 0.3s ease, border-bottom 0.3s ease;
     }
 
 
     .nav-bar li a:hover {
-        color: #00a2c7;
+        color: #ea00ff;
     }
 
 
     .button {
         padding: 9px 25px;
-        background-color: rgba(0, 136, 169, 1);
+        background-color: rgb(255, 255, 255);
         border: none;
         border-radius: 50px;
         cursor: pointer;
         transition: background-color 0.3s ease;
+        color: black;
     }
 
 
     .button:hover {
-        background-color: rgba(0, 136, 169, 0.8);
-    }
+        background: linear-gradient(0deg, rgb(255 57 172 / 78%) 0%, rgb(255 42 30 / 37%) 100%);
+        color: #ffffff;
+        box-shadow:  0 4px rgba(255 57 172)    }
 }
 
 
@@ -152,7 +155,7 @@ main {
 
 
 .nombre {
-    font-family:var();
+    font-family:3.9rem;
     color:var(--color-seleccionado);
       font-size: 40px;
 }
@@ -169,9 +172,9 @@ main {
     border-radius: 85px;
     margin: 27px;
     padding: 17px 41px;
-    background: var(--color-seleccionado);
-    background: var(--color-segundo);
-    color: white;
+    background: linear-gradient(0deg, rgb(255 57 172 / 78%) 0%, rgb(255 42 30 / 37%) 100%);
+    color: #ffffff;
+    
     border-style: none;
     font-size: 15px;
 }
@@ -193,25 +196,25 @@ main {
 
     @media screen and (min-width: 750px){
         .saludo {
-            font-size: 30px;
+            font-size: 1.875rem;
              }
 
 
          .nombre {
-             font-size: 70px;
+             font-size: 4.375rem;
             padding-bottom: 15px;
              }
 
 
          .breve-descripcion {
              padding-bottom: 30px;
-              font-size: 25px;
+              font-size: 1.563rem;
              }
 
 
          .btn-primero {
              padding: 22px 49px;
-             font-size: 20px;
+             font-size: 1.25rem;
              margin: 0px;}          
     }
 
@@ -313,12 +316,12 @@ main {
 
 
 .icono:hover{
-    border: 1px solid rgba(36,127,130,1);
+    border: 1px solid rgb(130, 36, 107);
 }
 
 
 .iconos-de-conocimientos i {
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 
@@ -413,7 +416,7 @@ main {
 
 
 .autor-de-frase {
-   font-size: 20px;
+   font-size: 1.25rem;
    padding-top: 10px;
 }
 
@@ -424,7 +427,7 @@ main {
     @media screen and (min-width: 750px){
         .container-frase {
         padding: 120px 80px;
-        font-size: 20px;
+        font-size: 1.25;
         display: flex;
         align-items: center;
         }
@@ -519,7 +522,7 @@ h4 {
 }
 
 .card-proyecto:hover {
-    box-shadow: 0 0 8px 4px rgb(13, 78, 90);
+    box-shadow: 0 0 8px 4px rgb(90, 13, 71);
 }
 
 /* ---------------MEDIA 750PX---------------- */
@@ -553,6 +556,8 @@ h4 {
     .card-proyecto {
         width: calc(33.33% - 20px); 
     }
+    
+
 }
 
 /* ---------------COMIENZO DE CONTACTO----------- */
@@ -962,7 +967,7 @@ footer{
 
 .saludo-final p {
     font-size: 20px;
-    color: white;
+    color: black;
 }
 
 /* ---------------MEDIA 750PX---------------- */
@@ -976,11 +981,20 @@ footer{
          padding-bottom: 15px;
          font-size: 22px;
          padding-left: 10px;
-    } 
+         transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+
+
+    .navegacion-de-footer span a:hover {
+        color: #ea00ff;
+    }
+
+    
 
     .navegacion-de-footer {
         padding: 40px;
     }
+
 
     .red-githubdos span{ 
         font-size: 30px;
@@ -991,6 +1005,7 @@ footer{
     .saludo-final{
         font-size: 60px;
         padding: 50px;
+        color: black;
     }
 }    
 
