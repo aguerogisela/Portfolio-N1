@@ -15,38 +15,33 @@
 <body>
     <!-- ------------ Comienzo de Header--------------- -->
     <header>
-        <div class="container-header">
-                 <nav class="nav-navegacion">
-                        
-                    <a href="#hola" class="items-link" >HOLA</a>
-               
-                    <a href="#conocimientos" class="items-link">CONOCIMIENTOS</a>
-                 
-                    <a href="#proyectos" class="items-link">PROYECTOS</a>
-                   
-                    <a href="#contacto" class="items-link">CONTACTO</a>
-               
-                </nav>
-        </div>
-    </header>
+            <nav>
+                 <ul class="nav-bar" >
+                    <li><a href="#container-main" >HOLA</a></li>
+                     <li><a href="#container-conocimientos" >CONOCIMIENTOS</a></li>
+                      <li><a href="#container-proyectos" >PROYECTOS</a></li>
+                      <li><a href="#container-contactame" class="button">CONTACTO</a> </li>
+                 </ul>
+            </nav>
+        </header>
     <!-- ---------------- Comienzo del Main----------------------- -->
-    <main>    
+    <main>
         <div id="container-main">
-                <div class="titulo">
-                 <p class="saludo">¡Hola! Soy</p>
-                  <h1 class="nombre"> Gisela Agüero </h1>  
-                  <p class="breve-descripcion"> Desarrolladora, diseñadora etc.</p>
-
-                 <div class="btn-primero"> LO QUE HAGO</div>                    
-                 </div> 
-                 <div class="imagen">
-                     <img class="imagen-uno" src="Imagenes/inicio-foto-bienvenida7.png" alt  >
-                 </div>
-       <!-- Final de Main -->
-         </div>
+            <div class="titulo">
+                <p class="saludo">¡Hola! Soy</p>
+                <h1 class="nombre">Gisela Agüero</h1>
+                <p class="breve-descripcion">Desarrolladora, diseñadora, etc.</p>
+                <div class="btn-primero">LO QUE HAGO</div>
+            </div>
+            <div class="imagen">
+                <img class="imagen-uno" src="Imagenes/inicio-foto-bienvenida7.png" alt="">
+            </div>
+        </div>
     </main>
 <!-- -----------------Comienzo de seccion de "Mis conocimientos" ------------->
+
 <div id="container-conocimientos">
+    <div class="mis-conocimientos">
         <div class="titulo-descripcion">
              <h2 class="segundo-titulo">Mis conocimientos</h2>
              <p class="parrafo-conocimientos">Lorem ipsum dolor sit amet consectetur adipisicing elit.r quae, . Veniam omnis ratione repellat voluptate.</p>
@@ -77,103 +72,119 @@
                     <i class="fa-brands fa-git-alt" style="color: #f34f29;"></i>                
                     <p>GIT</p>
             </div>
-    </div>
+      </div>
+  </div>
 </div>
        <!----------------------- Fin de seccion de "Mis conocimientos" ---------------->
             <!----------------- Comienzo de seccion de "frase" --------------->
 <div class="container-frase">
-    <div class="comillas">
-         <i class="fa-solid fa-quote-right" style="color: #ffffff;"></i>                 
-    </div> 
-         <p class="frase-elegida">
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio quasi nihil excepturi, enim odio eaque explicabo, debitis amet asperiores quam laboriosam, voluptatem possimus corporis voluptatum itaque fugit inventore distinctio?
-         </p>
-         <h3 class="autor-de-frase">
-         someone
-          </h3>
+    <div class="frase">
+          <div class="comillas">
+             <i class="fa-solid fa-quote-right" style="color: #ffffff;"></i>                 
+          </div> 
+              <p class="frase-elegida">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio quasi nihil excepturi, enim odio eaque explicabo, debitis amet asperiores quam laboriosam, voluptatem possimus corporis voluptatum itaque fugit inventore distinctio?
+              </p>
+               <h3 class="autor-de-frase">
+                someone
+              </h3>
+    </div>
 </div>
     <!-------------------------------- Fin de seccion de "frase" ------------------------------------->
   
       <!-------------------------------- Comienzo de seccion de "Mis proyectos" ----------------------------->
 <div id="container-proyectos">
-    <div class="texto-proyectos">
-        <h4 class="titulo-proyecto">
-            Mis proyectos
-        </h4>
-        <p class="descripcion-proyectos">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, similique. Quas quis fuga sed iure nihil
-        </p>
+    <div class="mis-proyectos">
+            <div class="texto-proyectos">
+            <h4 class="titulo-proyecto">
+                Mis proyectos
+            </h4>
+            <p class="descripcion-proyectos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, similique. Quas quis fuga sed iure nihil
+            </p>
+            </div>
+             <div class="cards-de-proyectos">
+            <div class="card-proyecto">
+                <a href="#" class="adentro-card">
+                    <img src="Imagenes/undraw_Working_late_re_0c3y.png" alt="">
+                    <p>Portfolio</p>
+                </a></div>
+            <div class="card-proyecto">
+                <a href="#" class="adentro-card">
+                    <img src="Imagenes/generador-de-memes.png" alt="">
+                    <p>Generador de memes</p>
+                </a></div>
+            <div class="card-proyecto">
+                <a href="#" class="adentro-card">
+                    <img src="Imagenes/match.png" alt="">
+                    <p>Match</p>
+                </a></div>
+            <div class="card-proyecto">
+                <a href="#">
+                    <img src="Imagenes/controlador-de-gastos.png" alt="">
+                    <p>Controlador de gastos</p>
+                </a></div>
+            <div class="card-proyecto">
+                <a href="#">
+                    <img src="Imagenes/administrados-de-reuniones.png" alt="">
+                    <p>Adminitrador de reuniones</p>
+                </a></div>
+            <div class="card-proyecto">
+                <a href="#" class="adentro-card">
+                    <img src="Imagenes/todo-app.png" alt="">
+                    <p>Todo app</p>
+                </a></div>
+            <div class="card-proyecto">
+                <a href="#" class="adentro-card">
+                    <img src="Imagenes/buscador-de-peliculas.png" alt="">
+                    <p>Buscador de peliculas</p>
+                </a>
+            </div>
     </div>
-    <div class="cards-de-proyectos">
-        <div class="card-proyecto">
-            <a href="#" class="adentro-card">
-                <img src="Imagenes/undraw_Working_late_re_0c3y.png" alt="">
-                <p>Portfolio</p>
-            </a></div>
-        <div class="card-proyecto">
-            <a href="#" class="adentro-card">
-                <img src="Imagenes/generador-de-memes.png" alt="">
-                <p>Generador de memes</p>
-            </a></div>
-        <div class="card-proyecto">
-            <a href="#" class="adentro-card">
-                <img src="Imagenes/match.png" alt="">
-                <p>Match</p>
-            </a></div>
-        <div class="card-proyecto">
-            <a href="#">
-                <img src="Imagenes/controlador-de-gastos.png" alt="">
-                <p>Controlador de gastos</p>
-            </a></div>
-        <div class="card-proyecto">
-            <a href="#">
-                <img src="Imagenes/administrados-de-reuniones.png" alt="">
-                <p>Adminitrador de reuniones</p>
-            </a></div>
-        <div class="card-proyecto">
-            <a href="#" class="adentro-card">
-                <img src="Imagenes/todo-app.png" alt="">
-                <p>Todo app</p>
-            </a></div>
-        <div class="card-proyecto">
-            <a href="#" class="adentro-card">
-                <img src="Imagenes/buscador-de-peliculas.png" alt="">
-                <p>Buscador de peliculas</p>
-            </a></div>
-    </div>
-</div>    <!-- -----------FIN DE SECCION "MIS PROYECTOS"--------------------------- -->
+</div>   
+</div> 
+<!-- -----------FIN DE SECCION "MIS PROYECTOS"--------------------------- -->
 <!-- ------------------COMIENZO DE SECCION "CONTACTAME"------------------------- -->
 <fieldset>
 
 <div id="container-contactame">   
+    <div class="contacto-formulario">
         <div class="contactame">
               <h5 class="titulo-contactame">
              Contactame
               </h5>
                <p class="parrafo-de-contacto"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ipsum earum corrupti voluptatem quod laudantium enim quis sequi vel eaque aut dolore voluptate dicta facere, porro, tempora, praesentium eligendi possimus.
                </p>
-        </div>       
-        <nav class="container-contacto">
-            
-             <a href="https://github.com/aguerogisela" class="red-github">
-                 <span><i class="fa-brands fa-github-alt"></i></span>
-                 <span class="github-text">mygithub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/gisela-belen-ag%C3%BCero-barriga-8b0351209/" class="red-github">
-                 <span><i class="fa-brands fa-linkedin"></i></span>
-                 <span class="github-text">BelenAguero</span>
-              </a>
-              <a href="https://www.behance.net/giselaagero1" class="red-github">
-                <span><i class="fa-brands fa-behance"></i></span>
-                <span class="github-text">BelenAguero</span>
-             </a>
-             <a href="mailto:aguerobel03@gmail.com?Subject=Hola%20Belen%20vi%20tu%20portfolio" class="email">
-                 <span><i class="fa-regular fa-envelope"></i></span>
-                 <span class="github-text">aguerogisela03@gmail.com</span> 
-                </a>
-        
-        </nav>
-    
+               
+            <nav class="container-contacto">
+                <ul class="lista-contactame">
+                  <li class="li-contactame">
+                    <a href="https://github.com/aguerogisela" class="red-github">
+                      <span><i class="fa-brands fa-github-alt"></i></span>
+                      <span class="github-text">mygithub</span>
+                    </a>
+                  </li>
+                  <li class="li-contactame">
+                    <a href="https://www.linkedin.com/in/gisela-belen-ag%C3%BCero-barriga-8b0351209/" class="red-github">
+                      <span><i class="fa-brands fa-linkedin"></i></span>
+                      <span class="github-text">BelenAguero</span>
+                    </a>
+                  </li>
+                  <li class="li-contactame">
+                    <a href="https://www.behance.net/giselaagero1" class="red-github">
+                      <span><i class="fa-brands fa-behance"></i></span>
+                      <span class="github-text">BelenAguero</span>
+                    </a>
+                  </li>
+                  <li class="li-contactame">
+                    <a href="mailto:aguerobel03@gmail.com?Subject=Hola%20Belen%20vi%20tu%20portfolio" class="email">
+                      <span><i class="fa-regular fa-envelope"></i></span>
+                      <span class="github-text">aguerogisela03@gmail.com</span>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+    </div>
 
         <!-- ----------------------COMIENZO DEL FORM "ESCRIBEME"------------------------ -->
 
@@ -226,19 +237,20 @@
               </div>
 </form>
 </div>
-</fieldset> 
+</fieldset>
+ </div>
     <!-- ---------------------------FIN DE SECCION "CONTACTAME"------------------------------------- -->
  <footer>
     <!-- ----------------------------NAVEGACION FINAL ----------------------------- -->
         <nav class="navegacion-de-footer">
             
-           <span> <a href="#hola" class="items-link-footer" >HOLA</a></span>
+           <span> <a href="#container-main" class="items-link-footer" >HOLA</a></span>
                
-            <span><a href="#conocimientos" class="items-link-footer">CONOCIMIENTOS</a></span>
+            <span><a href="#container-conocimientos" class="items-link-footer">CONOCIMIENTOS</a></span>
      
-            <span><a href="#proyectos" class="items-link-footer">PROYECTOS</a></span>
+            <span><a href="#container-proyectos" class="items-link-footer">PROYECTOS</a></span>
        
-            <span><a href="#contacto" class="items-link-footer">CONTACTO</a></span>
+            <span><a href="#container-contactame" class="items-link-footer">CONTACTO</a></span>
         </nav>
     <!-- ---------------------FINAL DE NAVEGACION--------------------- -->
         <nav class="ultimos-iconos">             
