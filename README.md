@@ -29,22 +29,28 @@ Paleta de colores:
 
 En esta sección, podrás explorar los conocimientos que adquiriré a lo largo de mi curso de frontend. ¡Acompáñame en este viaje de aprendizaje!
 
+![image](https://github.com/aguerogisela/Portfolio-N1/assets/148830185/3710e4a2-a7e1-44e7-b22a-8913fe1c86e1)
+
 ## Inspiración Diaria 🌟
 
 "Me gusta entrar en áreas donde tengo miedo. El miedo es una señal de que voy en la dirección correcta". Esta frase es mi recordatorio diario de la importancia de impactar positivamente en los demás. La encontrarás destacada en la sección de mi  frase.
+![image](https://github.com/aguerogisela/Portfolio-N1/assets/148830185/102c3bbd-1b37-4abc-b824-3b9ac1cf1216)
 
 ## Proyectos Destacados 🚀
 
 En la sección de Proyectos, podrás acceder a todos los trabajos que he realizado durante el curso. El primero es, ¡por supuesto, este mismo portfolio que estás explorando!
+![image](https://github.com/aguerogisela/Portfolio-N1/assets/148830185/fe3967e7-b9b9-4644-9e07-d7f708c2cbcd)
 
 ## Contacto y Redes Sociales 📱
 
 Descubre más sobre mí en mis redes sociales. Además, encontrarás un formulario de contacto (aunque sea de muestra). 
 
+![image](https://github.com/aguerogisela/Portfolio-N1/assets/148830185/1610dfe5-435c-4bbe-834a-cb558bb1fd23)
 
 ## En el Pie de Página ✨
 
 El pie de página cuenta con un pequeño menú de navegación y botones de redes sociales. Mi toque favorito es el "Hecho con ♥" que tiene un brillante efecto. 
+![image](https://github.com/aguerogisela/Portfolio-N1/assets/148830185/55f8c7fa-2ed6-4add-b556-57e7a28d7dc5)
 
 ## Recursos 
 Las siguientes fuentes que hicieron posible este proyecto:
